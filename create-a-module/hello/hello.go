@@ -2,9 +2,8 @@ package main
 
 import (
 	"fmt"
+	"go-lang-tutorial/create-a-module/greetings"
 	"log"
-
-	"example.com/greetings"
 )
 
 func main() {
