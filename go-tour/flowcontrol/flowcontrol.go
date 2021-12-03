@@ -3,7 +3,7 @@ package flowcontrol
 import (
 	"fmt"
 	"math"
-	"runtime"
+	"time"
 )
 
 func ForFunction() {
@@ -32,15 +32,40 @@ func IfFunction(x, n, lim float64) float64 {
 }
 
 func SwitchFunction() {
-	fmt.Print("Go runs on ")
-	switch os := runtime.GOOS; os {
-	case "darwin":
-		fmt.Println("OS X.")
-	case "linux":
-		fmt.Println("Linux.")
+	fmt.Println("When's Saturday?")
+	today := time.Now().Weekday()
+	switch time.Saturday {
+	case today + 0:
+		fmt.Println("Today.")
+	case today + 1:
+		fmt.Println("Tomorrow.")
+	case today + 2:
+		fmt.Println("In two days.")
 	default:
-		// freebsd, openbsd,
-		// plan9, windows...
-		fmt.Printf("%s.\n", os)
+		fmt.Println("Too far away.")
 	}
+	/*
+			Switch sem uma condição é o mesmo que true:
+		t := time.Now()
+		switch {
+			case t.Hour() < 12:
+				fmt.Println("Good morning!")
+			case t.Hour() < 17:
+				fmt.Println("Good afternoon.")
+			default:
+				fmt.Println("Good evening.")
+		}
+	*/
+}
+
+// A defer statement defers the execution of a function until the surrounding function returns.
+//The deferred call's arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.
+func DeferFunction() {
+	fmt.Println("counting")
+
+	for i := 0; i < 2; i++ {
+		defer fmt.Println(i)
+	}
+
+	fmt.Println("done")
 }
