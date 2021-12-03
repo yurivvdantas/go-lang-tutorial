@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"go-tour/flowcontrol"
 	"math"
 	"math/cmplx"
 	"math/rand"
@@ -66,4 +67,6 @@ func main() {
 	fmt.Println(split(17))
 	zeroValues()
 	testConversion()
+	flowcontrol.ForFunction()
+	TestImportFunctionFromSamePackage()
 }
