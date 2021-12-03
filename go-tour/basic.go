@@ -68,5 +68,7 @@ func main() {
 	zeroValues()
 	testConversion()
 	flowcontrol.ForFunction()
+	fmt.Println(flowcontrol.IfFunction(3, 2, 10))
+	flowcontrol.SwitchFunction()
 	TestImportFunctionFromSamePackage()
 }
