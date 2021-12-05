@@ -7,6 +7,7 @@ import (
 )
 
 func ForFunction() {
+	fmt.Println("For function...")
 	sum := 0
 	for i := 0; i <= 10; i++ {
 		if sum%2 == 0 {
@@ -32,6 +33,7 @@ func IfFunction(x, n, lim float64) float64 {
 }
 
 func SwitchFunction() {
+	fmt.Println("Switch Function...")
 	fmt.Println("When's Saturday?")
 	today := time.Now().Weekday()
 	switch time.Saturday {
@@ -61,6 +63,7 @@ func SwitchFunction() {
 // A defer statement defers the execution of a function until the surrounding function returns.
 //The deferred call's arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.
 func DeferFunction() {
+	fmt.Println("Defer function...")
 	fmt.Println("counting")
 
 	for i := 0; i < 2; i++ {

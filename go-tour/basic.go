@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"go-tour/flowcontrol"
+	"go-tour/moretypes"
 	"math"
 	"math/cmplx"
 	"math/rand"
@@ -58,6 +59,7 @@ func testConversion() {
 
 func main() {
 
+	fmt.Println("Basic operation...")
 	a, b, c := "a", false, 1
 	fmt.Println(a, b, c, c, d, python, java)
 	fmt.Println(ToBe, MaxInt, z)
@@ -71,5 +73,6 @@ func main() {
 	fmt.Println(flowcontrol.IfFunction(3, 2, 10))
 	flowcontrol.SwitchFunction()
 	flowcontrol.DeferFunction()
+	moretypes.PointerFunction()
 	TestImportFunctionFromSamePackage()
 }
