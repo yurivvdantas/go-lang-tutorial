@@ -74,5 +74,6 @@ func main() {
 	flowcontrol.SwitchFunction()
 	flowcontrol.DeferFunction()
 	moretypes.PointerFunction()
+	moretypes.PrintStruct()
 	TestImportFunctionFromSamePackage()
 }
