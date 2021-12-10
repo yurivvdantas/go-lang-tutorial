@@ -14,3 +14,18 @@ func PrintStruct() {
 	p.X = 1e9
 	fmt.Println(v)
 }
+
+/*
+Uma forma interessante de iniciar um struct genérico e instanciar ele em um slices:
+s := []struct {
+		i int
+		b bool
+	}{
+		{2, true},
+		{3, false},
+		{5, true},
+		{7, true},
+		{11, false},
+		{13, true},
+	}
+*/

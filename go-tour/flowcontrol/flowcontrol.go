@@ -22,6 +22,13 @@ func ForFunction() {
 			   sum += sum
 		    }
 	*/
+	//Também é possível usar o range para o for
+	//When ranging over a slice, two values are returned for each iteration. The first is the index, and the second is a copy of the element at that index.
+	//Também é possível usar das seguintes formas:
+	//for i, _ := range pow, for _, v := range pow, for i := range pow
+	for i, v := range []int{10, 20, 30, 40} {
+		fmt.Printf("i: %d, v: %d\n", i, v)
+	}
 }
 
 func IfFunction(x, n, lim float64) float64 {
