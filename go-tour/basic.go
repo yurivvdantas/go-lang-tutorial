@@ -80,5 +80,6 @@ func main() {
 	moretypes.MapFunction()
 	moretypes.FunctionsValues()
 	methods.MethodsFunction()
+	methods.InterfaceFunction()
 	TestImportFunctionFromSamePackage()
 }
