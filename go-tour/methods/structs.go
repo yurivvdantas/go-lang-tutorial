@@ -1,9 +1,12 @@
-package moretypes
+package methods
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 type Vertex struct {
-	X, Y int
+	X, Y float64
 }
 
 //Testes com struct, com iniciação e alteração de valores via ponteiro
@@ -13,6 +16,10 @@ func PrintStruct() {
 	p := &v
 	p.X = 1e9
 	fmt.Println(v)
+}
+
+func (v *Vertex) Abs() float64 {
+	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
 
 /*

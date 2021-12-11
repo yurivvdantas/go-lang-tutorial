@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"go-tour/flowcontrol"
+	"go-tour/methods"
 	"go-tour/moretypes"
 	"math"
 	"math/cmplx"
@@ -74,9 +75,10 @@ func main() {
 	flowcontrol.SwitchFunction()
 	flowcontrol.DeferFunction()
 	moretypes.PointerFunction()
-	moretypes.PrintStruct()
+	methods.PrintStruct()
 	moretypes.SlicesFunction()
 	moretypes.MapFunction()
 	moretypes.FunctionsValues()
+	methods.MethodsFunction()
 	TestImportFunctionFromSamePackage()
 }

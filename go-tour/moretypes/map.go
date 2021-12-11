@@ -2,6 +2,7 @@ package moretypes
 
 import (
 	"fmt"
+	"go-tour/methods"
 	"strings"
 
 	"golang.org/x/tour/wc"
@@ -23,20 +24,20 @@ func WordCount(s string) map[string]int {
 
 func MapFunction() {
 	fmt.Println("Map function...")
-	m := make(map[string]Vertex)
-	m["Bell Labs"] = Vertex{
-		40, -74,
+	m := make(map[string]methods.Vertex)
+	m["Bell Labs"] = methods.Vertex{
+		X: 40, Y: -74,
 	}
 
-	m = map[string]Vertex{
+	m = map[string]methods.Vertex{
 		"Bell Labs": {
-			41, -74,
+			X: 41, Y: -74,
 		},
 		"Google": {
-			37, -122,
+			X: 37, Y: -122,
 		},
 	}
-	m["microsoft"] = Vertex{3, 4}
+	m["microsoft"] = methods.Vertex{X: 3, Y: 4}
 	delete(m, "Google")
 
 	//If key is in m, ok is true. If not, ok is false.
