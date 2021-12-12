@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"go-tour/concurrency"
 	"go-tour/flowcontrol"
 	"go-tour/methods"
 	"go-tour/moretypes"
@@ -81,5 +82,6 @@ func main() {
 	moretypes.FunctionsValues()
 	methods.MethodsFunction()
 	methods.InterfaceFunction()
+	concurrency.GoRoutineFunction()
 	TestImportFunctionFromSamePackage()
 }
